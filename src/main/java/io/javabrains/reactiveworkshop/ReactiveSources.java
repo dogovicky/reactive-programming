@@ -35,7 +35,7 @@ public class ReactiveSources {
     }
 
     public static Mono<Integer> intNumberMono() {
-        return Mono.just(42)
+        return Mono.just(42) // Mono only returns one element
                 .delayElement(Duration.ofSeconds(1));
     }
 
